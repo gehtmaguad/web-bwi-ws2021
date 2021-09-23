@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My First Website</title>
+</head>
+
+<body>
+  <h1 id="heading-1">News!</h1>
+  <form>
+    <div>
+      <label for="tag">Tag</label>
+    </div>
+    <div>
+      <!-- a select input uses a option tag -->
+      <select id="tag" name="tag">
+        <!-- the selected attribute preselects an option, the disabled attribute makes the option unselectable  -->
+        <option value="" disabled selected>-- Choose a tag --</option>
+        <option value="sport">Sport</option>
+        <option value="food">Food</option>
+        <option value="wellness">Wellness</option>
+      </select>
+    </div>
+    <div>
+      <label for="headline">Headline</label>
+    </div>
+    <div>
+      <input id="headline" name="headline" type="text" placeholder="Awesome News!!" />
+    </div>
+    <div>
+      <label for="image">Image</label>
+    </div>
+    <div>
+      <!-- the input with the type attribute file has an attribute accept where you can specify the allowed file types -->
+      <input id="image" name="image" type="file" accept="application/pdf" />
+    </div>
+    <div>
+      <label for="text">Text</label>
+    </div>
+    <div>
+      <!-- an textarea has rows and cols and has a own html tag -->
+      <textarea id="text" name="text" placeholder="This is a new post!" rows="10" cols="50"></textarea>
+    </div>
+    <div>
+      <!-- use a button (or a input) with the attribute type submit to submit a form -->
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+  <p>
+    <a href="index.html">Back</a>
+  </p>
+</body>
+
+</html>
