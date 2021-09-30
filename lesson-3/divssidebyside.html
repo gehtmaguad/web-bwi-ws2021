@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .parent {
+            font-size: 0;
+        }
+
+        .child {
+            font-size: 1rem;
+            display: inline-block;
+            width: 50%;
+        }
+
+        .float-parent-element {}
+
+        .float-child-element {
+            float: left;
+            width: 50%;
+        }
+
+        .flex-parent-element {
+            display: flex;
+        }
+
+        .flex-child-element {
+            flex: 1;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline block-->
+    <div class='parent'>
+        <div class='child yellow'>Inline-Block Column 1
+            
+        </div>
+        <div class='child blue'>Inline-Block Column 2</div>
+    </div>
+    <br>
+
+    <!-- float -->
+    <div class="float-parent-element">
+        <div class="float-child-element yellow">
+            Float Column 1
+        </div>
+        <div class="float-child-element blue">
+            Float Column 2
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- flexbox -->
+    <div class="flex-parent-element">
+        <div class="flex-child-element yellow">Flex Column 1</div>
+        <div class="flex-child-element blue">Flex Column 2</div>
+    </div>
+    <br>
+
+    <!-- css grid -->
+    <div class="grid-container">
+        <div class="grid-child yellow">
+            Grid Column 1
+        </div>
+        <div class="grid-child blue">
+            Grid Column 2
+        </div>
+    </div>
+
+</body>
+
+</html>
