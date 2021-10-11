@@ -1,0 +1,104 @@
+/*
+  you can import hosted font families in css or import in html
+  e.g.:
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+  you can also use fonts hosted on your own webserver
+*/
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200,500,700&display=swap');
+
+/* html tags only use the name of the html tag */
+body {
+  font-size: 100%; /* 16px */
+  font-family: 'Karla', sans-serif;
+  background-color: white;
+  font-weight: 200;
+}
+
+/* define styles for multiple html tags (works with ids, and classes as well) */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-size: 2.5rem; /* This is relative base font-size: 16px * 2,5 = 40px  */
+  margin-top: 1.5rem;
+  margin-bottom: 2.2rem;
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+}
+
+/* overwrite styles, later styles overwrite previous styles (cascade) */
+h2 {
+  font-size: 2.2rem; /* This is relative base font-size: 16px * 2.2 = 35,2px  */
+  margin-top: 1.3rem;
+  margin-bottom: 1.9rem;
+}
+
+h3 {
+  font-size: 1.9rem; /* This is relative base font-size: 16px * 1.9  */
+  margin-top: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.6rem; /* This is relative base font-size: 16px * 1.6  */
+  margin-top: 0.9rem;
+  margin-bottom: 1.3rem;
+}
+
+h5 {
+  font-size: 1.3rem; /* This is relative base font-size: 16px * 1.3  */
+  margin-top: 0.6rem;
+  margin-bottom: 1.1rem;
+}
+
+h6 {
+  font-size: 1.2rem; /* This is relative base font-size: 16px * 1.2  */
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.3rem;
+  color: #bfced9;
+}
+
+/* select a p tag with the class first-letter and use the pseudo element ::first-letter */
+p.first-letter::first-letter {
+  font-size: 1.4rem;
+}
+
+a {
+  color: #bfced9;
+  text-decoration: underline;
+}
+
+/* define styles for the pseudo classes :hover and :active */
+a:hover, a:active {
+  color: white;
+  text-decoration: white wavy underline;
+}
+
+/* classes start with a . */
+.container {
+  max-width: 768px;
+  padding: 2rem 2.5rem;
+  margin: 2rem 2.5rem;
+  background-color: #0f1a26;
+  border-radius: 2rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+}
+
+/* ids start with a #  */
+#first-paragraph {
+  color: yellow;
+}
