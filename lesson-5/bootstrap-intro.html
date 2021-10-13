@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My First Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- show on mobile and desktop (hint dev tools) compare with external-stylesheet.html -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- just some styling for the colums to show the grid system -->
+    <style>
+      [class*="col-"] {
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- the rows always needs to be placed in a container (max-width: 768px) or a fluid container (full width) -->
+    <div class="container">
+      <div class="row">
+        <!-- over 12 cols on mobile, 8 cols on tablets and above  -->
+        <div class="col-md-8">
+          <h1>.col-md-8</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat sunt perspiciatis asperiores voluptates suscipit distinctio, esse provident accusamus tempora facere expedita, magni vero minus ut. Architecto explicabo sint alias!
+          </p>
+          <!-- img using rounded class -->
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Black_from_a_camera.jpg"
+            class="rounded"
+            alt="Black from Camera (wikipedia)"
+            width="300"
+            height="150"
+          >
+        </div>
+        <!-- over 6 cols on mobile, 4 cols on tablets and above  -->
+        <div class="col-6 col-md-4">
+          <h2>.col-6 .col-md-4</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quis earum. Libero sequi ex inventore facilis, modi obcaecati iure officia velit eos beatae, magnam blanditiis saepe, dolorum aliquam! Porro, a.
+          </p>
+          <!-- button using bootstraop btn and btn-warning class (warning default yellow) -->
+          <button class="btn btn-warning">Warning</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- over 6 cols on mobile, 4 cols on tablets and above  -->
+        <div class="col-6 col-md-4">
+          <h3>.col-6 .col-md-4</h3>
+          <p>
+            <!-- small tag using bootstrap styling -->
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, dicta laboriosam! Voluptas commodi dolor, rerum nostrum magnam perferendis dolore cupiditate molestias repellat saepe minus cumque eligendi corporis optio eius sapiente.
+            </small>
+          </p>
+          <!-- button using bootstraop btn and btn-danger class (warning default red) -->
+          <button class="btn btn-danger">Danger</button>
+        </div>
+        <!-- over 6 cols on mobile, 4 cols on tablets and above  -->
+        <div class="col-6 col-md-4">
+          <h3>.col-6 .col-md-4</h3>
+          <!-- mark tag using bootstrap styling -->
+          <mark>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet consequatur dolore laboriosam voluptate error ipsa, saepe nostrum id ab assumenda provident quis laborum illum, tempore aliquid, ipsum non enim?
+          </mark>
+        </div>
+        <!-- over 6 cols on mobile, 4 cols on tablets and above  -->
+        <div class="col-6 col-md-4">
+          <h3>.col-6 .col-md-4</h3>
+          <p>
+            <span class="fw-bold">Lorem ipsum dolor</span> <span class="small">sit amet consectetur</span> adipisicing elit. Esse hic veritatis delectus! Nulla deserunt fugit blanditiis sint cupiditate in, repellat placeat tempore quia ad delectus dolores atque neque quisquam exercitationem?
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- over 6 cols on mobile and above-->
+        <div class="col-6">
+          <h3>.col-6</h3>
+          <!-- p using muted text class -->
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, vero totam iste eligendi velit facilis beatae vel voluptatem necessitatibus officiis exercitationem dolore dolor ducimus, aspernatur, mollitia eum ratione. Amet, deleniti?
+          </p>
+        </div>
+        <!-- over 6 cols on mobile and above-->
+        <div class="col-6">
+          <h3>.col-6</h3>
+          <!-- p using primary text class (primary default blue) -->
+          <p class="text-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora reiciendis officia esse aut facilis voluptas, accusamus eligendi eius, autem quas! Quasi deserunt ex veritatis, cum quia esse provident laborum!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>
+            <a href="index.html">Styled Link to Index Site</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- always place scripts at the end of the body tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
