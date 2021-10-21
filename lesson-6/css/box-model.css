@@ -1,0 +1,32 @@
+/* every box has the same height, width and margin */
+#box-0, #box-1, #box-2, #box-3 {
+  width: 300px;
+  height: 100px;
+  margin: 100px;
+}
+
+/* box 0 is smaller than box 1 */
+#box-0 {
+  border: 1px solid blue;
+}
+
+/* box 1 is smaller than box 0, because it has a padding */
+/* box 0 and box 1 have a box sizing of content box */
+#box-1 {
+  padding: 50px;
+  border: 1px solid red;
+}
+
+/* box 2 has the same size as box 3 */
+/* with box sizing border box we get boxes that have the same size with different padding */
+#box-2 {
+  box-sizing: border-box;
+  border: 1px solid blue;
+}
+
+/* box 3 has the same size as box 2 but has a different padding */
+#box-3 {
+  box-sizing: border-box;
+  padding: 50px;
+  border: 1px solid red;
+}
