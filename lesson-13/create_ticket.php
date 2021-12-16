@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <title>Pic-Uploader and DB</title>
+    <title>New Ticket</title>
 </head>
 <body>
 <div class="container">
@@ -24,7 +24,7 @@
             </div>
 
         <?php
-            $uid = 127; // get it from the $_SESSION
+            $uid = 2; // get it from the $_SESSION
             $comment = "empty";
             $date = new DateTime();
             $timestamp = $date->getTimestamp();
@@ -59,8 +59,6 @@
                     echo "<div class='red'>Sorry, this file already exists!</div>";
                     $uploadStatus = 0;
                 }
-
-                echo $file["tmp_name"];
 
                 // Check if $uploadStatus is 0
                 if ($uploadStatus == 0) {

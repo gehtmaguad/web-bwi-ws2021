@@ -30,7 +30,6 @@
         <th>User ID</th>
         <th>Comment</th>
         <th>Picture</th>
-        <th>File path</th>
 
         <?php
             while ($stmt->fetch()) {
@@ -38,8 +37,7 @@
                 echo "<td>" . $ticketID . "</td>";
                 echo "<td>" . $user_id . "</td>";
                 echo "<td>" . $comment . "</td>";
-                echo "<td><img src='$file_path' alt='picture' width='200'></td>";
-                echo "<td><a href='" . $file_path . "' target='_blank'>Full resolution</a>". "</td>";
+                echo "<td><a href='" . $file_path . "' target='_blank'><img src='$file_path' alt='picture' height='50'></a>". "</td>";
                 echo "</tr>";
             }
             $stmt->close();
